@@ -1,0 +1,72 @@
+﻿@model IEnumerable<ContactManager_v._1._0.Model.Person>
+
+@{
+    ViewBag.Title = "Contact list";
+}
+
+<h2>Contact list</h2>
+<hr />
+<p>
+    @Html.ActionLink("Add new contact", "Create")
+</p>
+<table class="table table-hover">
+    <tr class="bg-primary">
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Emails)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phones)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+            @if (item.Emails.Count() > 1)
+            {
+                <p>@item.Emails.First().EmailAddress <a href="/Contacts/Details/@item.PersonID">+@(item.Emails.Count() - 1)</a></p>
+            }
+            else
+            {
+                if (item.Emails.Count() != 0)
+                {
+                    <p>@item.Emails.First().EmailAddress</p>
+                }
+            }
+        </td>
+        <td>
+
+            @if (item.Phones.Count() > 1)
+            {
+                <p>@item.Phones.First().Number <a href="/Contacts/Details/@item.PersonID">+@(item.Phones.Count() - 1)</a></p>
+            }
+            else
+            {
+                if (item.Phones.Count() != 0)
+                {
+                    <p>@item.Phones.First().Number</p>
+                }
+            }
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.PersonID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PersonID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PersonID })
+        </td>
+    </tr>
+}
+
+</table>

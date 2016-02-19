@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ContactManager_v._1._0.Model.ContactsContext">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAACAAAAAAAAAAAAAAEAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>ContactsContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ContactManager_v._1._0.Model.Email">
+    <Position X="2.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QIAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Email.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Person" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ContactManager_v._1._0.Model.Person">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAEAAACAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAg=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ContactManager_v._1._0.Model.Phone">
+    <Position X="6" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QIAAAAAAAAAAAAAAAEAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Phone.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Person" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

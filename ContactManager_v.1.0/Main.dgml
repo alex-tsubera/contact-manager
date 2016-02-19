@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="MVC" Bounds="51.7867605221479,-10.341666968462,50,25.96" Label="Web" UseManualLocation="True" />
+    <Node Id="Model" Bounds="-37.5969704868507,143.089550164032,54.0566666666667,25.96" UseManualLocation="True" />
+    <Node Id="Repository" Bounds="143.786709506765,141.11767152541,76.6133333333333,25.96" UseManualLocation="True" />
+    <Node Id="Service" Bounds="50.3225640131068,76.8165183794535,57.2966666666666,25.96" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="MVC" Target="Model" Bounds="1.27443365405927,15.618333031538,68.1222201934411,119.65002090488" />
+    <Link Source="MVC" Target="Repository" Bounds="85.811492075488,15.618333031538,82.1194266943203,118.109901905922" />
+    <Link Source="MVC" Target="Service" Bounds="77.1120322779347,15.618333031538,1.30812897902543,52.201009911467" />
+    <Link Source="Repository" Target="Model" Bounds="25.4592248264954,154.489736865185,118.32748468027,1.21107132316189" />
+    <Link Source="Service" Target="Model" Bounds="14.2023020762278,102.776518379454,47.2317009028734,34.9587255803449" />
+    <Link Source="Service" Target="Repository" Bounds="99.7874723172814,102.776518379454,53.8523425312082,33.5791746257109" />
+  </Links>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+</DirectedGraph>

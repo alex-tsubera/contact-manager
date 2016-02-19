@@ -1,0 +1,10 @@
+D:\_UNIVERSITY\_PRACTICE\ContactManager_v.1.0\ContactManager_v.1.0.Model\bin\Debug\ContactManager_v.1.0.Model.dll.config
+D:\_UNIVERSITY\_PRACTICE\ContactManager_v.1.0\ContactManager_v.1.0.Model\bin\Debug\ContactManager_v.1.0.Model.dll
+D:\_UNIVERSITY\_PRACTICE\ContactManager_v.1.0\ContactManager_v.1.0.Model\bin\Debug\ContactManager_v.1.0.Model.pdb
+D:\_UNIVERSITY\_PRACTICE\ContactManager_v.1.0\ContactManager_v.1.0.Model\bin\Debug\EntityFramework.dll
+D:\_UNIVERSITY\_PRACTICE\ContactManager_v.1.0\ContactManager_v.1.0.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\_UNIVERSITY\_PRACTICE\ContactManager_v.1.0\ContactManager_v.1.0.Model\bin\Debug\EntityFramework.xml
+D:\_UNIVERSITY\_PRACTICE\ContactManager_v.1.0\ContactManager_v.1.0.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\_UNIVERSITY\_PRACTICE\ContactManager_v.1.0\ContactManager_v.1.0.Model\obj\Debug\ContactManager_v.1.0.Model.csprojResolveAssemblyReference.cache
+D:\_UNIVERSITY\_PRACTICE\ContactManager_v.1.0\ContactManager_v.1.0.Model\obj\Debug\ContactManager_v.1.0.Model.dll
+D:\_UNIVERSITY\_PRACTICE\ContactManager_v.1.0\ContactManager_v.1.0.Model\obj\Debug\ContactManager_v.1.0.Model.pdb

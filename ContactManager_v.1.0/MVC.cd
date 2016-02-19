@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ContactManager_v._1._0.Controllers.ContactsController">
+    <Position X="1" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAACAAAAgAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\ContactsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ContactManager_v._1._0.Controllers.EmailsController">
+    <Position X="3.25" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAACAAAAAAAAAAAEAAEACAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\EmailsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ContactManager_v._1._0.Controllers.PhonesController">
+    <Position X="5.5" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAEAAEACAAAAAAAAAAE=</HashCode>
+      <FileName>Controllers\PhonesController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

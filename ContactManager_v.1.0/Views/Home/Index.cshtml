@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Contact Manager</h1>
+    <p class="lead">Welcom to your personal contact manager.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            See your contacts list to start do some management stuff
+        </p>
+        @Html.ActionLink("Go to contact list", "Index", "Contacts", null, new { @class = "btn btn-default"})
+    </div>
+    <div class="col-md-4">
+        <h2>Adding new contacts</h2>
+        <p>You can so easily create a new contact just by clicking the button.</p>
+        @Html.ActionLink("Add new contact", "Create", "Contacts", null, new { @class = "btn btn-default"})
+    </div>
+</div>

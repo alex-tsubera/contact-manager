@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ContactManager_v._1._0.Service.EmailService">
+    <Position X="2.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAACAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>EmailService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ContactManager_v._1._0.Service.EntityService&lt;TEntity&gt;">
+    <Position X="4.75" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAABAAAAAAgAAAAAAAAEAAEAAAgAAAAAAAAA=</HashCode>
+      <FileName>EntityService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ContactManager_v._1._0.Service.PersonService">
+    <Position X="4.75" Y="9.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAACCAAAAAAAEAAAIAAAAAAAIA=</HashCode>
+      <FileName>PersonService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ContactManager_v._1._0.Service.PhoneService">
+    <Position X="7.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAIAAAAAAAIA=</HashCode>
+      <FileName>PhoneService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="ContactManager_v._1._0.Service.IEmailService">
+    <Position X="4.5" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>IEmailService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ContactManager_v._1._0.Service.IEntityService&lt;TEntity&gt;">
+    <Position X="4.5" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAEAAEAAAgAAAAAAAAA=</HashCode>
+      <FileName>IEntityService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ContactManager_v._1._0.Service.IPersonService">
+    <Position X="2.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAIA=</HashCode>
+      <FileName>IPersonService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ContactManager_v._1._0.Service.IPhoneService">
+    <Position X="7.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>IPhoneService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ContactManager_v._1._0.Service.IService" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

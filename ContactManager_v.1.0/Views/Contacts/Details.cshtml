@@ -1,0 +1,59 @@
+﻿@model ContactManager_v._1._0.Model.Person
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Contact information</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Emails)
+        </dt>
+        <dd>
+            <table class="table-condensed table-hover">
+                @foreach (var e in Model.Emails)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(elem => e.EmailAddress)</td>
+                    </tr>
+                }
+            </table>
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Phones)
+        </dt>
+        <dd>
+            <table class="table-condensed table-hover">
+                @foreach (var p in Model.Phones)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(elem => p.Number)</td>
+                    </tr>
+                }
+            </table>
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PersonID }) |
+    @Html.ActionLink("Back to Contacts", "Index")
+</p>

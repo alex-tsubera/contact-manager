@@ -1,0 +1,82 @@
+﻿@model ContactManager_v._1._0.Model.Person
+
+@{
+    ViewBag.Title = "Editing contact information";
+}
+
+<h2>Editing contact information</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Contact information</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.PersonID)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Emails, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10" style="padding-top:10px">
+                <table class="table-condensed table-hover">
+                    @foreach (var e in Model.Emails)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(elem => e.EmailAddress)</td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", "Emails", new { id = e.EmailID }, null) |
+                                @Html.ActionLink("Delete", "Delete", "Emails", new { id = e.EmailID }, null)
+                            </td>
+                        </tr>
+                    }
+                </table>
+                @Html.ActionLink("+", "Create", "Emails", new { personID = Model.PersonID }, new { @class = "btn btn-primary btn-xs" })
+            </div>
+            
+        </div>
+           
+        <div class="form-group">
+            @Html.LabelFor(model => model.Phones, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10" style="padding-top:10px">
+                <table class="table-condensed table-hover">
+                    @foreach (var p in Model.Phones)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(elem => p.Number)</td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", "Phones", new { id = p.PhoneID }, null) |
+                                @Html.ActionLink("Delete", "Delete", "Phones", new { id = p.PhoneID }, null)
+                            </td>
+                        </tr>
+                    }
+                </table>
+                @Html.ActionLink("+", "Create", "Phones", new { personID = Model.PersonID }, new { @class = "btn btn-primary btn-xs" })
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-success" /> | 
+        @Html.ActionLink("Back to Contacts", "Index", "Contacts")
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
